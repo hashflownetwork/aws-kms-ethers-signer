@@ -1,0 +1,69 @@
+{
+  "name": "@hashflow/aws-kms-ethers-signer",
+  "version": "0.0.5",
+  "description": "ethers.js Signer implementation using AWS KMS.",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "scripts": {
+    "eslint": "eslint ./",
+    "test": "ts-mocha --files -r tsconfig-paths/register test/*.spec.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hashflownetwork/aws-kms-ethers-signer.git"
+  },
+  "keywords": [
+    "aws",
+    "kms",
+    "signer",
+    "ethers",
+    "ethereum"
+  ],
+  "author": "victor@hashflow.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hashflownetwork/aws-kms-ethers-signer/issues"
+  },
+  "homepage": "https://github.com/hashflownetwork/aws-kms-ethers-signer#readme",
+  "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^18.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "mocha": "^10.2.0",
+    "prettier": "^2.8.4",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.1.2",
+    "typescript": "^4.9.5"
+  },
+  "dependencies": {
+    "@aws-sdk/client-kms": "^3.267.0",
+    "@ethersproject/abstract-signer": "^5.7.0",
+    "@ethersproject/bytes": "^5.7.0",
+    "@ethersproject/keccak256": "^5.7.0",
+    "@ethersproject/providers": "^5.7.2",
+    "@ethersproject/transactions": "^5.7.0",
+    "@types/bn.js": "^5.1.1",
+    "asn1.js": "^5.4.1",
+    "bn.js": "^5.2.1",
+    "ethers": "^5.0.0"
+  }
+}
